@@ -1,0 +1,52 @@
+1. Write a blog on Difference between HTTP1.1 vs HTTP2
+
+    HTTP : HTTP stands for HyperText Transfer Protocol. 
+	   This protocol acts as a Interface between the Computers and Servers to request and send the information.
+           It is one of the important in developing Web Applications. For Example : If user request a website from the browser, the               
+           browser sends the HTTP request to the corresponding server and it sends back HTTP response to the user's browser in any    
+           format like Text,Image,etc.
+    
+    Difference Between HTTP1.1 and HTTP2
+
+1. HTTP1.1 : It was created on 1997
+ 
+   HTTP2   : It was created on 2015
+
+2. HTTP1.1 : It works based on Text format.
+
+   HTTP2   : It works based on Binary Protocol.
+
+3. HTTP1.1 : It is Slower and not efficient than HTTP2
+  
+   HTTP2   : It is much faster and efficient than HTTP1.1
+
+4. HTTP1.1 : It loads resources one after the other, So if one resource is blocked the remaining resources is also Blocked.
+
+   HTTP2   : It uses single TCP connection to send multiple streams of data at once so that if one resource is blocked it does not   
+             affects the remaining resources. This is achieved by splitting data into Binary code messages and numbering those so that   
+             which resource each binary message belongs to.
+             
+5. HTTP1.1 : In this server only serves content to a client device if the client asks for it.
+
+   HTTP2   : In this the server "push" content to a client before the client asks for it. 
+
+6. HTTP1.1 : This uses compression in HTTP messages to make the file smaller which results in faster loading of webpages.
+ 
+   HTTP2   : This uses advanced compression method called HPACK that reduces redundant information in HTTP header     
+             packets for the faster loading of webpages.
+
+7. HTTP1.1 : The client sends a request to the server and the server sends back the response to the client.
+
+   HTTP2   : The protocol called Secured Remote Protocol 2 is used for secured connection between the client and the server.
+
+8. HTTP1.1 : HTTP 1.1 cannot handle buffer overflow vulnerabilities due to the lack of sufficient measures.
+ 
+   HTTP2   : HTTP 2 includes measures to prevent buffer overflow vulnerabilities.
+
+      
+
+           
+
+
+
+

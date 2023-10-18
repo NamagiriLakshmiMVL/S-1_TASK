@@ -1,0 +1,83 @@
+2.Write a blog about objects and its internal representation in Javascript
+  
+  OBJECTS: Objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types, in the 	   form of “key: value” pairs. These keys can be variables or functions and are called properties and methods, respectively,	   in the context of an object.
+
+           Object is a  Collection of Properties in Javascript.
+  
+           Property is an association between the Key and the value.
+
+           If a Property value is a function then it is called as Methods.
+
+           Object can be created using Object-Initializer.
+
+           Objects are enclosed within Curly-braces {}.
+
+           this keyword is used to refer objects in Javascript.
+
+   Syntax: const object = 
+           {
+           property1: value1, 
+           property2: value2, 
+           "property n": value3, 
+           };
+  
+   Example: const car = { name:"Duster" , color:"Brown" , model:"500" }
+
+            car is an object enclosed within Curly braces.name value pairs are seperated by colon.
+
+
+
+INTERNAL REPRESENTATION OF OBJECTS IN JAVASCRIPT
+
+Addition of Properties: Syntax:
+                          ObjectName.ObjectProperty = propertyValue;
+                        
+                        Both Object name and property name are case sensitive.Using dot operator(.) can access the property of the               
+                        object.
+
+			Example:
+                          const Car = new Object()
+                          Car.name = "BMW";
+                          Car.color = "Black";
+
+Deletion of Properties: Syntax:
+                          delete ObjectName.ObjectProperty;
+
+                        Example:
+                          delete Car.name;
+
+Accessing the Properties: Syntax: 
+                            objectName.property        
+          
+                            objectName["property”]     
+           
+                          Example:
+                             Car.color;
+                             Car["color"]
+
+Object Methods :  It is also an object Property but contains a function defenition within it.
+                   
+                  Syntax:
+                    function()
+                    {
+                       return property.value  
+                    }
+
+                   Example:
+                    function()
+                    {
+                       return car.color
+                    }
+
+Creating With Constructors: It is created by the keyword 'new'.
+                             
+                            Example:
+                             function Vehicle(name, maker) {
+                             this.name = name;
+                             this.maker = maker;
+                             }
+			     let car1 = new Vehicle(’Fiesta’, 'Ford’);
+                             let car2 = new Vehicle(’Santa Fe’, 'Hyundai’)
+                             console.log(car1.name);    
+                             console.log(car2.name);
+   
